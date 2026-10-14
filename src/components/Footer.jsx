@@ -1,5 +1,6 @@
 import React from 'react';
-import { Globe, Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import Logo from './Logo';
 
 const Footer = () => {
     return (
@@ -8,9 +9,8 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     {/* Brand */}
                     <div>
-                        <a href="#" className="flex items-center gap-2 text-2xl font-serif font-bold text-white mb-6">
-                            <Globe className="text-secondary w-8 h-8" />
-                            <span>NEXUS<span className="text-secondary">GLOBAL</span></span>
+                        <a href="#" className="inline-block mb-6 transition-transform duration-300 hover:scale-[1.02]">
+                            <Logo size="md" />
                         </a>
                         <p className="mb-6 leading-relaxed">
                             Your trusted partner in global trade. We bridge markets with efficiency, reliability, and innovation.

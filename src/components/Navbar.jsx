@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import Logo from './Logo';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -28,9 +29,8 @@ const Navbar = () => {
                 }`}
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
-                <a href="#" className="flex items-center gap-2 text-2xl font-serif font-bold text-white">
-                    <Globe className="text-secondary w-8 h-8" />
-                    <span>NEXUS<span className="text-secondary">GLOBAL</span></span>
+                <a href="#" className="transition-transform duration-300 hover:scale-[1.02]">
+                    <Logo size="md" />
                 </a>
 
                 {/* Desktop Menu */}

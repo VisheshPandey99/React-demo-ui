@@ -8,8 +8,8 @@ const Hero = () => {
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="https://images.unsplash.com/photo-1494412574643-35d324698428?q=80&w=2072&auto=format&fit=crop" // High quality container ship/port image
-                    alt="Global Logistics"
+                    src="/hero-ship.jpg"
+                    alt="Global Logistics Ship"
                     className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-primary/80 mix-blend-multiply" />
